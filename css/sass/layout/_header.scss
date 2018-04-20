@@ -1,0 +1,82 @@
+.header
+{
+    padding:20px 0;
+    border-bottom: 1px solid $grayColor;
+    overflow: hidden;
+            .thetoggler
+            {
+            cursor: pointer;
+            @media #{$maxMedium}
+            {
+                float:$fl-right;//to use in arabic
+                text-align: center;
+                margin-top:2em;
+                font-size:22px;
+            }
+                @media #{$minMedium}
+                {
+                    display: none;
+                }
+        }
+//    .container{
+//    display: flex;
+//        align-items: center;
+//    }
+    .logo
+    {
+        float:$fl-left;//to use in arabic
+        h1
+        {
+            margin-bottom: 0;
+            margin-top:10px;
+        }
+        p
+        {
+            
+        }
+    }
+    .navbar
+    {
+        background-color:$redColor;
+        overflow: hidden;
+        border-radius:4px;
+        @media #{$maxMedium}
+        {
+            display: none;
+            width:100%;
+        }
+        @media #{$minMedium}
+        {
+            display: block !important;
+            width:70%;
+            float:$fl-right;//to use in arabic
+            text-align: center;
+            margin-top:1rem;
+        }
+        li
+        {
+            @media #{$minlgMobile}
+            {
+                float:none;
+            }
+            @media #{$minMedium}
+            {
+                    width:20%;
+                    float:$fl-left;
+                    font-size:18px;
+                    text-align: center;
+            }
+            a
+            {
+                text-transform: uppercase;
+                padding:20px 10px;
+                color:#FFF;
+                display: block;
+                text-decoration: none;
+                &:hover{
+                color:#DDD;
+                }
+            }
+        }
+    }
+}

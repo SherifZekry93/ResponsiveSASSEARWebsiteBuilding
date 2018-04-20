@@ -1,0 +1,57 @@
+/*start services*/
+.services .service-box {
+  float: right; }
+
+/*end services*/
+/*our players*/
+.ourplayers .player-box {
+  float: right; }
+
+/*our players*/
+/*start lorem ipsum*/
+.loremipsum .lorema {
+  float: right;
+  width: 32%; }
+  .loremipsum .lorema:not(:last-of-type) {
+    margin-left: 1%;
+    margin-right: 1%; }
+  @media (max-width: 766px) {
+    .loremipsum .lorema {
+      float: none;
+      width: 100%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      margin-bottom: 10px; } }
+  .loremipsum .lorema img {
+    width: 100%;
+    max-width: 100%; }
+
+/*end lorem ipsum*/
+.footer .gallery, .footer .info, .footer .contact {
+  float: right; }
+@media (min-width: 767px) {
+  .footer .gallery .img-box img {
+    float: right !important; } }
+.footer .copyright .text {
+  float: right; }
+.footer .copyright .author {
+  float: left;
+  text-align: left; }
+@media (min-width: 568px) and (max-width: 766px) {
+  .footer .info {
+    border-right: none;
+    border-left: 1px solid #9c9c9c; } }
+
+@media (max-width: 991px) {
+  .header .thetoggler {
+    float: left; } }
+.header .logo {
+  float: right; }
+@media (min-width: 992px) {
+  .header .navbar {
+    float: left; } }
+@media (min-width: 992px) {
+  .header .navbar li {
+    float: right; } }
+
+/*# sourceMappingURL=homepage-rtl.css.map */

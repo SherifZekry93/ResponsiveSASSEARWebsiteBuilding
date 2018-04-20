@@ -1,0 +1,135 @@
+
+@import "helpers/variables.scss";
+$fl-left:right;
+$fl-right:left;
+
+/*start services*/
+
+.services
+{
+    
+    .service-box
+    {
+        float:$fl-left;
+    }
+    
+}
+
+/*end services*/
+/*our players*/
+.ourplayers
+{
+    .player-box
+    {
+        float:$fl-left ;
+    }
+}
+/*our players*/
+
+/*start lorem ipsum*/
+.loremipsum
+{
+    .lorema{
+        float:$fl-left;
+        width:(96% / 3);
+        &:not(:last-of-type)
+        {
+            margin-left:1%;
+            margin-right: 1%;
+        }
+        @media #{$maxlgMobile}
+        {
+            float:none;
+            width:100%;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            margin-bottom: 10px;
+        }
+        img{
+          width:100%;
+          max-width:100%;
+        }
+      
+        
+    }
+}
+/*end lorem ipsum*/
+
+
+
+.footer
+{
+    .gallery,.info,.contact
+    {
+        float:$fl-left;
+    }
+    .gallery
+    {
+        .img-box
+        {
+            img
+            {
+                @media #{$minlgMobile}
+                {
+                        float: $fl-left !important;
+                }
+            }
+        }
+    }
+    .copyright
+    {
+        .text
+        {
+            float:$fl-left;
+        }
+        .author
+        {
+            float: $fl-right;
+            text-align: $fl-right;
+        }
+    }
+    .info
+    {
+       
+        
+        @media #{$minmobile} and #{$maxlgMobile}
+            {
+               
+                
+                border-right:none;
+                border-left:1px solid $grayColor;
+        }}
+}
+
+
+.header
+{
+        .thetoggler
+        {    
+            @media #{$maxMedium}
+            {
+                float:$fl-right;//to use in arabic
+            }
+        }
+    
+    .logo
+    {
+        float:$fl-left;//to use in arabic
+    }
+    .navbar
+    {
+       
+        
+        @media #{$minMedium}
+        {
+            float:$fl-right;//to use in arabic
+        }
+        li
+        {
+            @media #{$minMedium}
+            {
+                    float:$fl-left;
+            }
+        }
+    }
+}
